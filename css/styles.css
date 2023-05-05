@@ -1,0 +1,61 @@
+.portada {
+    background-image: url('../img/portada.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+}
+
+.portada::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Opacidad del 50% */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.bg-overlay {
+    position: relative;
+}
+
+.bg-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+.text-overlay {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+
+.bg-overlay {
+    position: relative;
+}
+
+.bg-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+.text-overlay {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
